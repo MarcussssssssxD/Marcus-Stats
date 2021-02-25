@@ -522,13 +522,6 @@ ${ arvey.join ( "\n" ) }
 //-----------------------------------------------------------------------------------------------------------------------------------\\
 
 
-client.login(process.env.token);
-
-
-/*client.on("ready", async () => {
-  
-client.user.setPresence({ activity: { name: "Bleachers ❤️ Wapper"}, status: "idle" }); 
-}); */
 
 
 
@@ -536,7 +529,7 @@ client.user.setPresence({ activity: { name: "Bleachers ❤️ Wapper"}, status: 
 //---------------------------------- BOTU SESLİ SOKMA ----------------------------------------\\
 
   client.on("ready", () => {
-  client.channels.cache.get("813713689978077264").join();
+  client.channels.cache.get("Sesli Kanal ID").join();
   });
 
 //---------------------------------- BOTU SESLİ SOKMA ----------------------------------------\\
@@ -545,16 +538,33 @@ client.user.setPresence({ activity: { name: "Bleachers ❤️ Wapper"}, status: 
 
 
 
+//----------------------------- BOT KANALA YAZIYOR ------------------------------------\\ 
+
+client.on('ready', ()=>{
+client.channels.cache.get('KANAL ID').startTyping()    // Botun Yazıyor Gibi Gözükmesini istediğiniz Kanal ID
+})
+
+//----------------------------- BOT KANALA YAZIYOR ------------------------------------\\ 
+
+
+
+
 //------------------------------ BOT YAYINDA OYNUYOR ------------------------------------\\
 
 client.on("ready", async () => {
   /* log("Durum başarıyla ayarlandı") */
-      client.user.setActivity("Bleachers ❤️ Wapper", 
+      client.user.setActivity("Peding ❤️ Wapper", 
         { url: 'https://twitch.tv/.',
         type: 'STREAMING' }); 
 })
 
 //------------------------------ BOT YAYINDA OYNUYOR ------------------------------------\\
+
+
+
+
+
+
 
 
 
