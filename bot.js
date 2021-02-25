@@ -7,15 +7,15 @@ var moment = require ( "moment" );
 require ( "moment-duration-format" );
 logs ( client );
 
-let pub = "KATAGORİ ID"; //  PUBLİC KATAGORİ ID
-let kayıt = "KATAGORİ ID"   // KAYIT KATAGORİ ID
-let terapi = "KATAGORİ ID"  // TERAPİ kATAGORİ ID
-let sorun = "KATAGORİ ID"   // SORUN ÇÖZME KATAGORİ ID
-let vk = "KATAGORİ ID"   // VAMPİR KÖYLÜ ATAGORİ ID
-let dc = "KATAGORİ ID"  // DOĞRULUK CESARETİL KATAGORİ ID
-let game = "KATAGORİ ID"  // OYUN KATAGORİ ID
-let priv = "KATAGORİ ID"    // PRİVATE KATAGORİ ID
-let alone = "KATAGORİ ID"   // ALONE kATAGORİ ID
+let pub = "814553777641226330"; //  PUBLİC KATAGORİ ID
+let kayıt = "814553802451320932"   // KAYIT KATAGORİ ID
+let terapi = "814553827327868999"  // TERAPİ kATAGORİ ID
+let sorun = "814553856629014548"   // SORUN ÇÖZME KATAGORİ ID
+let vk = "814553886433345598"   // VAMPİR KÖYLÜ ATAGORİ ID
+let dc = "814553920516915261"  // DOĞRULUK CESARETİL KATAGORİ ID
+let game = "814553945997049907"  // OYUN KATAGORİ ID
+let priv = "814553966309801984"    // PRİVATE KATAGORİ ID
+let alone = "814553991140474941"   // ALONE kATAGORİ ID
 
 //--------------------- CONSOL AKTİF OLDUĞUNA DAİR MESAJ GÖNDERME ------------------------------------\\
 
@@ -25,6 +25,27 @@ client.on ( "ready" , () => {
 } );
 
 //--------------------- CONSOL AKTİF OLDUĞUNA DAİR MESAJ GÖNDERME ------------------------------------\\
+
+
+//---------------------------------- BOTU SESLİ SOKMA ----------------------------------------\\
+
+  client.on("ready", () => {
+  client.channels.cache.get("814555360601440312").join();
+  });
+
+//---------------------------------- BOTU SESLİ SOKMA ----------------------------------------\\
+
+
+//------------------------------ BOT YAYINDA OYNUYOR ------------------------------------\\
+
+client.on("ready", async () => {
+  /* log("Durum başarıyla ayarlandı") */
+      client.user.setActivity("Peding ❤️ Wapper", 
+        { url: 'https://twitch.tv/.',
+        type: 'STREAMING' }); 
+})
+
+//------------------------------ BOT YAYINDA OYNUYOR ------------------------------------\\
 
 
 //---------------------------------------------------------------------------------------\\
@@ -43,7 +64,7 @@ client.on ( "voiceChannelJoin" , ( member , channel ) => {
 
 client.on ( "voiceChannelLeave" , ( member , channel ) => {
     if ( member.user.bot ) return
-    if (!member.roles.cache.has ("Yetkili Rol ID")) return     // Yetkili Rol ID ( KOMUTU KULLANABİLCEK )
+    if (!member.roles.cache.has ("814561299626721301")) return     // Yetkili Rol ID ( KOMUTU KULLANABİLCEK )
     let data = db.fetch ( `1data:${ member.user.id }:${ channel.id }` );
     if ( data ) {
         let total = db.fetch ( `1total:${ member.user.id }:${ channel.id }` ) || {
@@ -523,25 +544,6 @@ ${ arvey.join ( "\n" ) }
 //-----------------------------------------------------------------------------------------------------------------------------------\\
 
 
-//---------------------------------- BOTU SESLİ SOKMA ----------------------------------------\\
-
-  client.on("ready", () => {
-  client.channels.cache.get("814555360601440312").join();
-  });
-
-//---------------------------------- BOTU SESLİ SOKMA ----------------------------------------\\
-
-
-//------------------------------ BOT YAYINDA OYNUYOR ------------------------------------\\
-
-client.on("ready", async () => {
-  /* log("Durum başarıyla ayarlandı") */
-      client.user.setActivity("Peding ❤️ Wapper", 
-        { url: 'https://twitch.tv/.',
-        type: 'STREAMING' }); 
-})
-
-//------------------------------ BOT YAYINDA OYNUYOR ------------------------------------\\
 
 
 
