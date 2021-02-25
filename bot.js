@@ -7,15 +7,15 @@ var moment = require ( "moment" );
 require ( "moment-duration-format" );
 logs ( client );
 
-let pub = "Katagori ID"; //  PUBLİC KATAGORİ ID
-let kayıt = "Katagori ID"   // KAYIT KATAGORİ ID
-let terapi = "Katagori ID"  // TERAPİ kATAGORİ ID
-let sorun = "Katagori ID"   // SORUN ÇÖZME kATAGORİ ID
-let vk = "Katagori ID"   // VAMPİR KÖYLÜ ATAGORİ ID
-let dc = "Katagori ID"  // DOĞRULUK CESARETİL KATAGORİ ID
-let game = "Katagori ID"  // OYUN KATAGORİ ID
-let priv = "Katagori ID"    // PRİVATE KATAGORİ ID
-let alone = "Katagori ID"   // ALONE kATAGORİ ID
+let pub = "814553777641226330"; //  PUBLİC KATAGORİ ID
+let kayıt = "814553802451320932"   // KAYIT KATAGORİ ID
+let terapi = "814553827327868999"  // TERAPİ kATAGORİ ID
+let sorun = "814553856629014548"   // SORUN ÇÖZME kATAGORİ ID
+let vk = "814553886433345598"   // VAMPİR KÖYLÜ ATAGORİ ID
+let dc = "814553920516915261"  // DOĞRULUK CESARETİL KATAGORİ ID
+let game = "814553945997049907"  // OYUN KATAGORİ ID
+let priv = "814553966309801984"    // PRİVATE KATAGORİ ID
+let alone = "814553991140474941"   // ALONE kATAGORİ ID
 
 //--------------------- CONSOL AKTİF OLDUĞUNA DAİR MESAJ GÖNDERME ------------------------------------\\
 
@@ -526,7 +526,7 @@ ${ arvey.join ( "\n" ) }
 //---------------------------------- BOTU SESLİ SOKMA ----------------------------------------\\
 
   client.on("ready", () => {
-  client.channels.cache.get("Sesli Kanal ID").join();
+  client.channels.cache.get("814555360601440312").join();
   });
 
 //---------------------------------- BOTU SESLİ SOKMA ----------------------------------------\\
