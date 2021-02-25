@@ -7,20 +7,21 @@ var moment = require ( "moment" );
 require ( "moment-duration-format" );
 logs ( client );
 
-let pub = "Katagori ID"; //  Public Katagori ID
-let kayıt = "Katagori ID"   // Kayıt Katagori ID
-let terapi = "Katagori ID"  // Terapi Katagori ID
-let sorun = "Katagori ID"   // Sorun Çözme KAtagori ID
-let vk = "Katagori ID"   // Vampir Köylü Katagöri ID
-let dc = "Katagori ID"  // D-C Katagori ID
-let game = "Katagori ID"  // Oyun Katagori ID
-let priv = "Katagori ID"    // Private Katagori ID
-let alone = "Katagori ID"   // Alone Katagori ID
+let pub = "Katagori ID"; //  PUBLİC KATAGORİ ID
+let kayıt = "Katagori ID"   // KAYIT KATAGORİ ID
+let terapi = "Katagori ID"  // TERAPİ kATAGORİ ID
+let sorun = "Katagori ID"   // SORUN ÇÖZME kATAGORİ ID
+let vk = "Katagori ID"   // VAMPİR KÖYLÜ ATAGORİ ID
+let dc = "Katagori ID"  // DOĞRULUK CESARETİL KATAGORİ ID
+let game = "Katagori ID"  // OYUN KATAGORİ ID
+let priv = "Katagori ID"    // PRİVATE KATAGORİ ID
+let alone = "Katagori ID"   // ALONE kATAGORİ ID
 
 //--------------------- CONSOL AKTİF OLDUĞUNA DAİR MESAJ GÖNDERME ------------------------------------\\
 
 client.on ( "ready" , () => {
-    console.log ( client.user.username + " ismiyle giriş yapıldı." );
+    console.log ( "Başarıyla", client.user.username + "İsmi İle Giriş Yapıldı!" );
+    console.log("PEDİNG CODE")
 } );
 
 //--------------------- CONSOL AKTİF OLDUĞUNA DAİR MESAJ GÖNDERME ------------------------------------\\
@@ -372,9 +373,9 @@ client.on ( "message" , async msg => {
 
             .setAuthor ( user.tag , user.avatarURL ( { "dynamic" : true } ) )
             .setFooter('Peding ❤️ Wapper')
-            .setColor ( "#32353b" )
+            .setColor ( "RANDOM" )
             .setThumbnail ( user.avatarURL ( { "dynamic" : true } ) )
-            .setColor ( "#32353b" ).setDescription ( `${ üye } (${
+            .setColor ( "RANDOM" ).setDescription ( `${ üye } (${
                 üye.roles.highest
             }) Kişisinin Sunucudaki istatistikleri
 ───────────────
@@ -493,7 +494,7 @@ client.on ( "message" , async msj => {
     const toplam = new Discord.MessageEmbed ()
         .setAuthor ( msj.guild.name , "" )
         .setThumbnail ( "" )
-        .setColor ( "#32353b" )
+        .setColor ( "RANDOM" )
         .setFooter ( msj.author.tag , msj.author.avatarURL ( { "dynamic" : true } ) )
         .setDescription ( `
         
@@ -522,10 +523,6 @@ ${ arvey.join ( "\n" ) }
 //-----------------------------------------------------------------------------------------------------------------------------------\\
 
 
-
-
-
-
 //---------------------------------- BOTU SESLİ SOKMA ----------------------------------------\\
 
   client.on("ready", () => {
@@ -533,20 +530,6 @@ ${ arvey.join ( "\n" ) }
   });
 
 //---------------------------------- BOTU SESLİ SOKMA ----------------------------------------\\
-
-
-
-
-
-//----------------------------- BOT KANALA YAZIYOR ------------------------------------\\ 
-
-client.on('ready', ()=>{
-client.channels.cache.get('KANAL ID').startTyping()    // Botun Yazıyor Gibi Gözükmesini istediğiniz Kanal ID
-})
-
-//----------------------------- BOT KANALA YAZIYOR ------------------------------------\\ 
-
-
 
 
 //------------------------------ BOT YAYINDA OYNUYOR ------------------------------------\\
@@ -562,17 +545,8 @@ client.on("ready", async () => {
 
 
 
-
-
-
-
-
-
-
-
-
 //-------------------------------------- TOKEN KANALI -----------------------------\\
 
-                            client.login(process.env.token);
+                            client.login(ayarlar.token);
 
 //-------------------------------------- TOKEN KANALI -----------------------------\\
