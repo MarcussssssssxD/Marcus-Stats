@@ -64,7 +64,7 @@ client.on ( "voiceChannelJoin" , ( member , channel ) => {
 
 client.on ( "voiceChannelLeave" , ( member , channel ) => {
     if ( member.user.bot ) return
-    if (!member.roles.cache.has ("Yetkili ROL ID")) return     // Yetkili Rol ID ( KOMUTU KULLANABİLCEK )
+    if (!member.roles.cache.has ("814561299626721301")) return     // Yetkili Rol ID ( KOMUTU KULLANABİLCEK )
     let data = db.fetch ( `1data:${ member.user.id }:${ channel.id }` );
     if ( data ) {
         let total = db.fetch ( `1total:${ member.user.id }:${ channel.id }` ) || {
@@ -519,7 +519,7 @@ client.on ( "message" , async msj => {
         .setFooter ( msj.author.tag , msj.author.avatarURL ( { "dynamic" : true } ) )
         .setDescription ( `
         
-ꏪ Bleachers • Sunucunun Ses Bilgisi
+ꏪ Peding Code  • Sunucunun Ses Bilgisi
 
 __Top 5 En Aktif Ses Kanalı__
 ${ arooy.join ( "\n" ) }
