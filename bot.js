@@ -518,7 +518,7 @@ client.on ( "message" , async msj => {
         .setFooter ( msj.author.tag , msj.author.avatarURL ( { "dynamic" : true } ) )
         .setDescription ( `
         
-ꏪ Peding Code  • Sunucunun Ses Bilgisi
+Matthe Deneme  • Sunucunun Ses Bilgisi
 
 **➥ Top 5 En Aktif Ses Kanalı**
 ${ arooy.join ( "\n" ) }
