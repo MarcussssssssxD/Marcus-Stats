@@ -7,15 +7,15 @@ var moment = require ( "moment" );
 require ( "moment-duration-format" );
 logs ( client );
 
-let pub = "819195744195182603"; //  PUBLİC KATAGORİ ID
-let kayıt = "819195738747437076"   // KAYIT KATAGORİ ID
+let pub = "819579078717079553"; //  PUBLİC KATAGORİ ID
+let kayıt = "819579075613556746"   // KAYIT KATAGORİ ID
 let terapi = "819195746644525136"  // TERAPİ kATAGORİ ID
 let sorun = "819195746644525136"   // SORUN ÇÖZME KATAGORİ ID
 let vk = "819195745801601054"   // VAMPİR KÖYLÜ ATAGORİ ID
 let dc = "819195746644525136"  // DOĞRULUK CESARETİL KATAGORİ ID
 let game = "819195746644525136"  // OYUN KATAGORİ ID
-let priv = "819195745109409842"    // PRİVATE KATAGORİ ID
-let alone = "819195745109409842"   // ALONE kATAGORİ ID
+let priv = "819579080512766022"    // PRİVATE KATAGORİ ID
+let alone = "819579081380593684"   // ALONE kATAGORİ ID
 
 //--------------------- CONSOL AKTİF OLDUĞUNA DAİR MESAJ GÖNDERME ------------------------------------\\
 
