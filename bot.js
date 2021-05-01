@@ -35,13 +35,8 @@ client.on ( "ready" , () => {
 
 //---------------------------------- BOTU SESLİ SOKMA ----------------------------------------\\
 
-
-//------------------------------ BOT YAYINDA OYNUYOR ------------------------------------\\
-
-client.on("ready", async () => {
-  /* log("Durum başarıyla ayarlandı") */
-      client.user.setActivity("ananin amina koyim ok"); 
-  client.user.setStatus("dnd");
+ client.on("ready", async () => {
+client.user.setPresence({ activity: { name: "Matthe 🖤 Shines" }, status: "dnd" });
 })
 
 //------------------------------ BOT YAYINDA OYNUYOR ------------------------------------\\
@@ -392,7 +387,7 @@ client.on ( "message" , async msg => {
 //-----------------------------------------------------------------------------------------------------------------------------------\\
 
             .setAuthor ( user.tag , user.avatarURL ( { "dynamic" : true } ) )
-            .setFooter('Matthe was here!')
+            .setFooter('Coder by Matthe')
             .setColor ( "RANDOM" )
             .setThumbnail ( user.avatarURL ( { "dynamic" : true } ) )
             .setColor ( "RANDOM" ).setDescription ( `${ üye } (${
@@ -516,23 +511,24 @@ client.on ( "message" , async msj => {
         .setThumbnail ( "" )
         .setColor ( "RANDOM" )
         .setFooter ( msj.author.tag , msj.author.avatarURL ( { "dynamic" : true } ) )
+        .setTimestamp()
         .setDescription ( `
         
-Matthe Deneme  • Sunucunun Ses Bilgisi
+Sunucunun Toplam İstatistikleri;
 
-**➥ Top 5 En Aktif Ses Kanalı**
+**<a:excalibur_hashtag:837325395258376202> En Aktif 5 Ses Kanalı**
 ${ arooy.join ( "\n" ) }
 
-**➥ Top 5 En Aktif Mesaj Kanalı **
+**<a:excalibur_hashtag:837325395258376202> En Aktif 5 Mesaj Kanalı **
 ${ arvy.join ( "\n" ) }
 
-**➥ Top 5 Seste En Aktif Üyeler**
+**<a:excalibur_hashtag:837325395258376202> Seste En Aktif İlk 5 Üye**
 ${ arrays.join ( "\n" ) }
 
-**➥ Top 5 Mesaj Kanallarında En Aktif Üyeler**
+**<a:ses:837325366233399336> Mesaj Kanallarında En Aktif İlk 5 Üye**
 ${ aruuy.join ( "\n" ) }
 
-**➥ Top 5 Public Kanallarda En Aktif Üyeler**
+**<a:excalibur_hashtag:837325395258376202> En Aktif 5 Sesli Kanaldaki Üyeler**
 ${ arvey.join ( "\n" ) }
 
          ` )
