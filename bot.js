@@ -9,19 +9,19 @@ logs ( client );
 
 let pub = "819579078717079553"; //  PUBLİC KATAGORİ ID
 let kayıt = "819579075613556746"   // KAYIT KATAGORİ ID
-let terapi = "819195746644525136"  // TERAPİ kATAGORİ ID
+let terapi = "819195746644525136"  // TERAPİ KATEGORİ ID
 let sorun = "819195746644525136"   // SORUN ÇÖZME KATAGORİ ID
 let vk = "819195745801601054"   // VAMPİR KÖYLÜ ATAGORİ ID
-let dc = "819195746644525136"  // DOĞRULUK CESARETİL KATAGORİ ID
+let dc = "819195746644525136"  // DOĞRULUK CESARETLİK KATAGORİ ID
 let game = "819195746644525136"  // OYUN KATAGORİ ID
 let priv = "819579080512766022"    // PRİVATE KATAGORİ ID
-let alone = "819579081380593684"   // ALONE kATAGORİ ID
+let alone = "819579081380593684"   // ALONE KATAGORİ ID
 
 //--------------------- CONSOL AKTİF OLDUĞUNA DAİR MESAJ GÖNDERME ------------------------------------\\
 
 client.on ( "ready" , () => {
     console.log ( "Başarıyla", client.user.username + "İsmi İle Giriş Yapıldı!" );
-    console.log("PEDİNG CODE")
+    console.log("MATTHE YOUTUBE")
 } );
 
 //--------------------- CONSOL AKTİF OLDUĞUNA DAİR MESAJ GÖNDERME ------------------------------------\\
@@ -30,16 +30,14 @@ client.on ( "ready" , () => {
 //---------------------------------- BOTU SESLİ SOKMA ----------------------------------------\\
 
   client.on("ready", () => {
-  client.channels.cache.get("819195758342963230").join();
+  client.channels.cache.get("840942025376661508").join();
   });
 
 //---------------------------------- BOTU SESLİ SOKMA ----------------------------------------\\
 
  client.on("ready", async () => {
-client.user.setPresence({ activity: { name: "Matthe 🖤 Shines" }, status: "dnd" });
+client.user.setPresence({ activity: { name: "YOUTUBE MATTHE" }, status: "online" });
 })
-
-//------------------------------ BOT YAYINDA OYNUYOR ------------------------------------\\
 
 
 //---------------------------------------------------------------------------------------\\
@@ -58,7 +56,7 @@ client.on ( "voiceChannelJoin" , ( member , channel ) => {
 
 client.on ( "voiceChannelLeave" , ( member , channel ) => {
     if ( member.user.bot ) return
-    if (!member.roles.cache.has ("816974026604937236")) return     // Yetkili Rol ID ( KOMUTU KULLANABİLCEK )
+    if (!member.roles.cache.has ("YETKİLİ ROL ID")) return     // Yetkili Rol ID ( KOMUTU KULLANABİLCEK )
     let data = db.fetch ( `1data:${ member.user.id }:${ channel.id }` );
     if ( data ) {
         let total = db.fetch ( `1total:${ member.user.id }:${ channel.id }` ) || {
@@ -387,12 +385,13 @@ client.on ( "message" , async msg => {
 //-----------------------------------------------------------------------------------------------------------------------------------\\
 
             .setAuthor ( user.tag , user.avatarURL ( { "dynamic" : true } ) )
-            .setFooter('Coder by Matthe')
+            .setFooter('YOUTUBE MATTHE')
+            .setTimestamp()
             .setColor ( "RANDOM" )
             .setThumbnail ( user.avatarURL ( { "dynamic" : true } ) )
             .setColor ( "RANDOM" ).setDescription ( `${ üye } (${
                 üye.roles.highest
-            }) Kişisinin Sunucudaki istatistikleri
+            }) Eolüne sahip kişinin sunucudaki istatistikleri;
 ───────────────
 **➥ Sesli Sohbet Bilgileri:**
 • Toplam: \`${ toplam }\`
@@ -516,19 +515,19 @@ client.on ( "message" , async msj => {
         
 Sunucunun Toplam İstatistikleri;
 
-**<a:excalibur_hashtag:837325395258376202> En Aktif 5 Ses Kanalı**
+**➥ En Aktif 5 Ses Kanalı**
 ${ arooy.join ( "\n" ) }
 
-**<a:excalibur_hashtag:837325395258376202> En Aktif 5 Mesaj Kanalı **
+**➥ En Aktif 5 Mesaj Kanalı**
 ${ arvy.join ( "\n" ) }
 
-**<a:excalibur_hashtag:837325395258376202> Seste En Aktif İlk 5 Üye**
+**➥ Seste En Aktif İlk 5 Üye**
 ${ arrays.join ( "\n" ) }
 
-**<a:ses:837325366233399336> Mesaj Kanallarında En Aktif İlk 5 Üye**
+**➥ Mesaj Kanallarında En Aktif 5 Üye**
 ${ aruuy.join ( "\n" ) }
 
-**<a:excalibur_hashtag:837325395258376202> En Aktif 5 Sesli Kanaldaki Üyeler**
+**➥ En Aktif 5 Sesli Kanalı**
 ${ arvey.join ( "\n" ) }
 
          ` )
@@ -542,8 +541,8 @@ ${ arvey.join ( "\n" ) }
 
 
 
-//-------------------------------------- TOKEN KANALI -----------------------------\\
+//-------------------------------------- TOKEN KISIMI -----------------------------\\
 
 client.login(process.env.token)
 
-//-------------------------------------- TOKEN KANALI -----------------------------\\
+//-------------------------------------- TOKEN KISIMI -----------------------------\\
