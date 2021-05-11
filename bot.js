@@ -7,15 +7,15 @@ var moment = require ( "moment" );
 require ( "moment-duration-format" );
 logs ( client );
 
-let pub = "819579078717079553"; //  PUBLİC KATAGORİ ID
-let kayıt = ""   // KAYIT KATAGORİ ID
-let terapi = ""  // TERAPİ KATEGORİ ID
-let sorun = ""   // SORUN ÇÖZME KATAGORİ ID
-let vk = "819195745801601054"   // VAMPİR KÖYLÜ KATAGORİ ID
-let dc = "819195746644525136"  // DOĞRULUK CESARETLİK KATAGORİ ID
-let game = "819195746644525136"  // OYUN KATAGORİ ID
-let priv = "819579080512766022"    // PRİVATE KATAGORİ ID
-let alone = "819579081380593684"   // ALONE KATAGORİ ID
+let pub = "PUBLİC KATEGORİ ID"; //  PUBLİC KATAGORİ ID
+let kayıt = "KAYIT KATEGORİ ID"   // KAYIT KATAGORİ ID
+let terapi = "TERAPİ KATEGORİ ID"  // TERAPİ KATEGORİ ID
+let sorun = "SORUN KATEGORİ ID"   // SORUN ÇÖZME KATAGORİ ID
+let vk = "VK KATEGORİ ID"   // VAMPİR KÖYLÜ KATAGORİ ID
+let dc = "DC KATEGORİ ID"  // DOĞRULUK CESARETLİK KATAGORİ ID
+let game = "GAME KATEGORİ ID"  // OYUN KATAGORİ ID
+let priv = "PRİV KATEGORİ ID"    // PRİVATE KATAGORİ ID
+let alone = "ALONE KATEGORİ ID"   // ALONE KATAGORİ ID
 
 //--------------------- CONSOL AKTİF OLDUĞUNA DAİR MESAJ GÖNDERME ------------------------------------\\
 
@@ -36,7 +36,7 @@ client.on ( "ready" , () => {
 //---------------------------------- BOTU SESLİ SOKMA ----------------------------------------\\
 
  client.on("ready", async () => {
-client.user.setPresence({ activity: { name: "DURUMUNUZ" }, status: "online" });
+client.user.setPresence({ activity: { name: "YOUTUBE MATTHE" }, status: "online" });
 })
 
 
