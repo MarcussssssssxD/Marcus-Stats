@@ -9,7 +9,7 @@ logs ( client );
 
 let pub = "819579078717079553"; //  PUBLİC KATAGORİ ID
 let kayıt = "819579075613556746"   // KAYIT KATAGORİ ID
-let terapi = "819195746644525136"  // TERAPİ KATEGORİ ID
+let terapi = ""  // TERAPİ KATEGORİ ID
 let sorun = "819195746644525136"   // SORUN ÇÖZME KATAGORİ ID
 let vk = "819195745801601054"   // VAMPİR KÖYLÜ KATAGORİ ID
 let dc = "819195746644525136"  // DOĞRULUK CESARETLİK KATAGORİ ID
@@ -30,7 +30,7 @@ client.on ( "ready" , () => {
 //---------------------------------- BOTU SESLİ SOKMA ----------------------------------------\\
 
   client.on("ready", () => {
-  client.channels.cache.get("SES KANALI İD").join();
+  client.channels.cache.get("840942025376661508").join();
   });
 
 //---------------------------------- BOTU SESLİ SOKMA ----------------------------------------\\
