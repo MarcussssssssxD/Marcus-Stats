@@ -11,7 +11,7 @@ let pub = "819579078717079553"; //  PUBLİC KATAGORİ ID
 let kayıt = "819579075613556746"   // KAYIT KATAGORİ ID
 let terapi = "819195746644525136"  // TERAPİ KATEGORİ ID
 let sorun = "819195746644525136"   // SORUN ÇÖZME KATAGORİ ID
-let vk = "819195745801601054"   // VAMPİR KÖYLÜ ATAGORİ ID
+let vk = "819195745801601054"   // VAMPİR KÖYLÜ KATAGORİ ID
 let dc = "819195746644525136"  // DOĞRULUK CESARETLİK KATAGORİ ID
 let game = "819195746644525136"  // OYUN KATAGORİ ID
 let priv = "819579080512766022"    // PRİVATE KATAGORİ ID
@@ -30,13 +30,13 @@ client.on ( "ready" , () => {
 //---------------------------------- BOTU SESLİ SOKMA ----------------------------------------\\
 
   client.on("ready", () => {
-  client.channels.cache.get("840942025376661508").join();
+  client.channels.cache.get("SES KANALI İD").join();
   });
 
 //---------------------------------- BOTU SESLİ SOKMA ----------------------------------------\\
 
  client.on("ready", async () => {
-client.user.setPresence({ activity: { name: "YOUTUBE MATTHE" }, status: "online" });
+client.user.setPresence({ activity: { name: "DURUMUNUZ" }, status: "online" });
 })
 
 
@@ -391,7 +391,7 @@ client.on ( "message" , async msg => {
             .setThumbnail ( user.avatarURL ( { "dynamic" : true } ) )
             .setColor ( "RANDOM" ).setDescription ( `${ üye } (${
                 üye.roles.highest
-            }) Eolüne sahip kişinin sunucudaki istatistikleri;
+            }) Rolüne sahip kişinin sunucudaki istatistikleri;
 ───────────────
 **➥ Sesli Sohbet Bilgileri:**
 • Toplam: \`${ toplam }\`
